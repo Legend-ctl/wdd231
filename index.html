@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalizelarge.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <img src="images/home.svg" alt="site logo" width="512" height="512">
+        <span>LEGEND'S SITE</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="firstsection">
+            <h2>About Me</h2>
+            <p>I am a passionate and driven individual with a strong desire to learn, grow, and make meaningful contributions in every environment I engage with. I thrive at the intersection of creativity, logic, and problem-solving, always seeking opportunities that challenge me and allow me to apply my skills effectively. My curiosity has led me to explore areas such as technology, programming, design, and digital solutions, where I have honed both my technical expertise and creative thinking. I approach every task with focus, discipline, and a commitment to excellence, ensuring that I consistently deliver high-quality results.
+
+            Beyond technical skills, I am deeply committed to personal and professional development. I value continuous learning,           adaptability, and resilience, and I embrace challenges as opportunities for growth. My mindset is centered on turning           failures into lessons, viewing obstacles as stepping stones rather than setbacks. This approach has strengthened my         ability to analyze problems critically, think strategically, and persist until I achieve the desired outcome. I am highly         organized and goal-oriented, which allows me to manage multiple responsibilities effectively while maintaining attention    to detail.</p>
+        </section>
+        <section class="secondsection">
+            <h2>Student Photo</h2>
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/profile.webp">
+                <source media="(min-width: 500px)" srcset="images/profile.webp">
+                <source media="(min-width: 250px)" srcset="images/profile.webp">
+                <img src="images/profile.webp" alt="A photo of me">
+            </picture>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href=""><img src="images/github.svg" target="_blank" alt="github" width="16" height="16"></a>
+            <a href=""><img src="images/linkedin.svg" target="_blank" alt="linked in" width="16" height="16"></a>
+            <a href=""><img src="images/facebook.svg" target="_blank" alt="facebook" width="16" height="16"></a>
+            <a href=""><img src="images/twitter-x.svg" target="_blank" alt="twitter" width="16" height="16"></a>
+        </div>
+        <p id="date">© 🌲 Moses John Godwin 🌲 Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script defer src="scripts/navigation.js"></script>
 </body>
 </html>
