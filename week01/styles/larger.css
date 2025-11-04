@@ -1,0 +1,65 @@
+@media only screen and (min-width: 38rem) {
+    header, main, nav, footer{
+        max-width: 100vw;
+        margin: 0 auto;
+    }
+
+
+    header{
+        grid-template-columns: 24px auto;
+    }
+    .hamburger{
+        display: none;
+    }
+    .navigation{
+        display: block;
+    }
+    .navigation ul{
+        display: flex;
+        background-color: var(--secondary-color);
+    }
+    .navigation a{
+        border-bottom: none;
+        color: white;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+    }
+    .first{
+        grid-column: 1 / 9;
+    }
+    .second{
+        grid-column: 9 / 13;
+    }
+    .third{
+        grid-column: 1 / 13;
+    }
+    .parent{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+        max-width: 100vw;
+        text-align: center;
+    }
+    .one{
+        grid-column: 1 / 5;
+    }
+    .two{
+        grid-column: 5 / 9;
+    }
+    .three{
+        grid-column: 9 / 13;
+    }
+    .first-p{
+        grid-column: 1 / 5;
+    }
+    .second-p{
+        grid-column: 5 / 9;
+    }
+    .third-p{
+        grid-column: 9 / 13;
+    }
+
+}
