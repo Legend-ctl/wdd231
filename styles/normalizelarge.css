@@ -33,9 +33,41 @@
         grid-column: 1 / 13;
         margin: 0px 10px 0px 10px;
     }
-    
-
-
+    .allbutton{
+    width: 32.3%;
+    background-color: var(--accent2);
+    border: solid var(--accent1);
+    margin: 5px 5px 0px 5px;
+    padding: 5px;
+    }
+    .csebutton{
+    width: 32.3%;
+    border: solid var(--accent1);
+    background-color: var(--accent2);
+    padding: 5px;
+    margin: 5px 5px 0px 5px;    
+    }
+    .wddbutton{
+    width: 32.3%;
+    border: solid var(--accent1);
+    background-color: var(--accent2);
+    padding: 5px;
+    margin: 5px 5px 0px 5px;
+    }
+     .parent{
+        display: flex;
+        gap: 1rem;
+    }
+    .firstp{
+        width: 32.6%;
+    }
+    .secondp{
+        width: 32.6%;
+    }
+    .thirdp{
+       width: 32.6%;
+    }
+   
     footer{
         margin: 5px 10px 0px 10px;
     }

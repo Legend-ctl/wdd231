@@ -107,25 +107,62 @@ h2{
 }
 
 .allbutton{
-    width: 32%;
+    width: 30%;
     background-color: var(--accent2);
     border: solid var(--accent1);
     margin: 5px 5px 0px 5px;
     padding: 5px;
+    border-radius: 7px;
+    font-size: larger;
 }
 .csebutton{
-    width: 32%;
+    width: 30%;
     border: solid var(--accent1);
     background-color: var(--accent2);
     padding: 5px;
-    margin: 5px 5px 0px 5px;    
+    margin: 5px 5px 0px 5px; 
+    border-radius: 7px;  
+    font-size: larger; 
 }
 .wddbutton{
-    width: 32%;
+    width: 30%;
     border: solid var(--accent1);
     background-color: var(--accent2);
     padding: 5px;
     margin: 5px 5px 0px 5px;
+    border-radius: 7px;
+    font-size: larger;
+}
+.firstp{
+    max-width: 100vw;
+    text-align: center;
+    background-color: var(--accent2);
+    border: 1px solid var(--accent1);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 3px;
+}
+.secondp{
+     max-width: 100vw;
+    text-align: center;
+    background-color: var(--accent2);
+    border: 1px solid var(--accent1);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 3px;
+}
+.thirdp{
+     max-width: 100vw;
+    text-align: center;
+    background-color: var(--accent2);
+    border: 1px solid var(--accent1);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 3px;
+}
+.lastp{
+    font-size: large;
+    text-align: center;
 }
 footer{
     text-align: center;
