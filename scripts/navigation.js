@@ -92,3 +92,45 @@ const courses = [
         completed: true
     }
 ]
+
+// ======== DOM ELEMENTS ========
+const container = document.querySelector(".parent");
+const allBtn = document.querySelector("#all-btn");
+const wddBtn = document.querySelector("#wdd-btn");
+const cseBtn = document.querySelector("#cse-btn");
+
+// ======== FUNCTION TO DISPLAY COURSES ========
+function displayCourses(courseList) {
+    container.innerHTML = ""; // Clear previous content
+
+    courseList.forEach(course => {
+        const courseDiv = document.createElement("div");
+        courseDiv.classList.add("course-card");
+
+        // Completed courses get a special background
+        courseDiv.style.backgroundColor = course.completed ? "lightgreen" : "lightcoral";
+        courseDiv.style.border = "1px solid var(--accent1)";
+        courseDiv.style.padding = "10px";
+        courseDiv.style.borderRadius = "8px";
+        courseDiv.style.marginBottom = "10px";
+
+        courseDiv.innerHTML = `
+            <h3>${course.subject} ${course.number}: ${course.title}</h3>
+            <p><b>Credits:</b> ${course.credits}</p>
+            <p><b>Certificate:</b> ${course.certificate}</p>
+            <p><b>Description:</b> ${course.description}</p>
+            <p><b>Technologies:</b> ${course.technology.join(", ")}</p>
+            <p><b>Status:</b> ${course.completed ? "✅ Completed" : "❌ Not Completed"}</p>
+        `;
+
+        container.appendChild(courseDiv);
+    });
+}
+
+// ======== FILTER FUNCTIONS ========
+allBtn.addEventListener("click", () => displayCourses(courses));
+wddBtn.addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "WDD")));
+cseBtn.addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "CSE")));
+
+// ======== INITIAL DISPLAY ========
+displayCourses(courses);
