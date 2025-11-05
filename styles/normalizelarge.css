@@ -29,4 +29,14 @@
         grid-column: 9 / 13;
         margin: 0px 10px 0px 0px;
     }
+    .thirdsection{
+        grid-column: 1 / 13;
+        margin: 0px 10px 0px 10px;
+    }
+    
+
+
+    footer{
+        margin: 5px 10px 0px 10px;
+    }
 }
